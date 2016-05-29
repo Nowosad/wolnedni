@@ -21,10 +21,6 @@ library('wolnedni')
 data('dni_wolne')
 ```
 
-``` r
-knitr::kable(dni_wolne[c(1, 50, 60, 90, 120, 150, 160, 180, 210, 240, 270, 300, 320), ], row.names = FALSE)
-```
-
 | data       | nazwa                                  |
 |:-----------|:---------------------------------------|
 | 2001-01-01 | Nowy Rok                               |
