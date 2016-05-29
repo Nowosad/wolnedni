@@ -6,7 +6,7 @@
 #'
 #' @return Wektor dat
 #'
-#' @name swiata
+#' @export
 #'
 #' @examples
 #' wielkanoc(2010)
@@ -17,10 +17,7 @@
 #'
 #' boze_cialo(2017)
 #'
-NULL
-#> NULL
 
-#' @rdname swiata
 wielkanoc <- function(rok){
         a <- rok %% 19
         b <- as.integer(rok/100)
@@ -41,18 +38,20 @@ wielkanoc <- function(rok){
         wielkanoc
 }
 
-#' @rdname swiata
+#' @export
+#' @describeIn wielkanoc Poniedzialek wielkanocny
 poniedzialek_wielkanocny <- function(rok){
         wielkanoc(rok) + 1
 }
 
-#' @rdname swiata
+#' @export
+#' @describeIn wielkanoc Zielone Swiatki
 zielone_swiatki <- function(rok){
         wielkanoc(rok) + 49
 }
 
-#' @rdname swiata
+#' @export
+#' @describeIn wielkanoc Boze Cialo
 boze_cialo <- function(rok){
         wielkanoc(rok) + 60
 }
-
