@@ -53,6 +53,14 @@ Swieto_Trzech_Kroli$what <- "Święto Trzech Króli"
 Swieto_Trzech_Kroli$when <- 6
 Swieto_Trzech_Kroli$when[Swieto_Trzech_Kroli$year < 2011] <- NA
 
+# Niedziela Wielkanocna
+
+w <- wielkanoc(lata)
+W <- df
+W$what <- "Niedziela Wielkanocna"
+W$when <- yday(w)
+
+
 # Poniedziałek Wielkanocny
 
 pw <- poniedzialek_wielkanocny(lata)
@@ -134,6 +142,7 @@ DDBN$when <- ddbn_doy
 
 dni_wolne <- rbind(Nowy_Rok,
                    Swieto_Trzech_Kroli,
+                   W,
                    PW,
                    Swieto_Panstwowe,
                    Swieto_Narodowe_3_Maja,
