@@ -19,22 +19,22 @@ library('wolnedni')
 
 # zbiór danych zawierający dni wolne w latach 2001-2025
 data('dni_wolne')
-knitr::kable(dni_wolne[c(1, 50, 60, 90, 120,150, 180, 210, 240, 270, 300), ])
+knitr::kable(dni_wolne[c(1, 50, 60, 90, 120,150, 180, 210, 240, 270, 300), ], row.names = FALSE)
 ```
 
-|     | data       | nazwa                                  |
-|-----|:-----------|:---------------------------------------|
-| 1   | 2001-01-01 | Nowy Rok                               |
-| 50  | 2025-01-06 | Święto Trzech Króli                    |
-| 60  | 2010-04-05 | Poniedziałek Wielkanocny               |
-| 90  | 2015-05-01 | Święto Państwowe                       |
-| 120 | 2020-05-03 | Święto Narodowe Trzeciego Maja         |
-| 150 | 2025-06-08 | Pierwszy dzień Zielonych Świątek       |
-| 180 | 2005-08-15 | Wniebowzięcie Najświętszej Marii Panny |
-| 210 | 2010-11-01 | Uroczystość Wszystkich Świętych        |
-| 240 | 2015-11-11 | Narodowe Święto Niepodległości         |
-| 270 | 2020-12-25 | pierwszy dzień Bożego Narodzenia       |
-| 300 | 2025-12-26 | drugi dzień Bożego Narodzenia          |
+| data       | nazwa                                  |
+|:-----------|:---------------------------------------|
+| 2001-01-01 | Nowy Rok                               |
+| 2025-01-06 | Święto Trzech Króli                    |
+| 2010-04-05 | Poniedziałek Wielkanocny               |
+| 2015-05-01 | Święto Państwowe                       |
+| 2020-05-03 | Święto Narodowe Trzeciego Maja         |
+| 2025-06-08 | Pierwszy dzień Zielonych Świątek       |
+| 2005-08-15 | Wniebowzięcie Najświętszej Marii Panny |
+| 2010-11-01 | Uroczystość Wszystkich Świętych        |
+| 2015-11-11 | Narodowe Święto Niepodległości         |
+| 2020-12-25 | pierwszy dzień Bożego Narodzenia       |
+| 2025-12-26 | drugi dzień Bożego Narodzenia          |
 
 ``` r
 

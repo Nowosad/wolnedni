@@ -33,7 +33,7 @@ library('wolnedni')
 
 # zbiór danych zawierający dni wolne w latach 2001-2025
 data('dni_wolne')
-knitr::kable(dni_wolne[c(1, 50, 60, 90, 120,150, 180, 210, 240, 270, 300), ])
+knitr::kable(dni_wolne[c(1, 50, 60, 90, 120,150, 180, 210, 240, 270, 300), ], row.names = FALSE)
 
 # określanie daty świąt w kolejnych latach
 wielkanoc(2010)
