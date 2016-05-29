@@ -39,17 +39,19 @@ wielkanoc <- function(rok){
 }
 
 #' @export
+#' @describeIn wielkanoc Poniedzialek wielkanocny
 poniedzialek_wielkanocny <- function(rok){
         wielkanoc(rok) + 1
 }
 
 #' @export
+#' @describeIn wielkanoc Zielone Swiatki
 zielone_swiatki <- function(rok){
         wielkanoc(rok) + 49
 }
 
 #' @export
+#' @describeIn wielkanoc Boze Cialo
 boze_cialo <- function(rok){
         wielkanoc(rok) + 60
 }
-

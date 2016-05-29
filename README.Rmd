@@ -1,0 +1,46 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "figure/",
+  fig.height = 1
+)
+```
+
+# Dni wolne
+
+[![Build Status](https://travis-ci.org/Nowosad/wolnedni.png?branch=master)](https://travis-ci.org/Nowosad/wolnedni)
+
+
+## Instalacja
+
+```R
+devtools::install_github("nowosad/wolnedni")
+```
+
+## Używanie
+
+```{r, pal_one}
+library('wolnedni')
+
+# zbiór danych zawierający dni wolne w latach 2001-2025
+data('dni_wolne')
+knitr::kable(dni_wolne[c(1, 50, 60, 90, 120,150, 180, 210, 240, 270, 300), ], row.names = FALSE)
+
+# określanie daty świąt w kolejnych latach
+wielkanoc(2010)
+
+poniedzialek_wielkanocny(2012)
+
+zielone_swiatki(c(2016, 2010))
+
+boze_cialo(2017)
+```
