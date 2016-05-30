@@ -86,7 +86,7 @@ data('dni_wolne')
 | 2016-05-01 | Święto Państwowe                       |
 | 2016-05-03 | Święto Narodowe Trzeciego Maja         |
 | 2016-05-15 | Pierwszy dzień Zielonych Świątek       |
-| 2016-05-15 | Dzień Bożego Ciała                     |
+| 2016-05-26 | Dzień Bożego Ciała                     |
 | 2016-08-15 | Wniebowzięcie Najświętszej Marii Panny |
 | 2016-11-01 | Uroczystość Wszystkich Świętych        |
 | 2016-11-11 | Narodowe Święto Niepodległości         |

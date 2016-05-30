@@ -1,7 +1,7 @@
 Package: wolnedni
 Type: Package
 Title: Okreslanie ustawowo wolnych dni od pracy w Polsce
-Version: 0.4.7
+Version: 0.4.8
 Authors@R: c(person("Jakub", "Nowosad", role = c("aut", "cre"), email = "nowosad.jakub@gmail.com"),
             person("Bartosz", "Czernecki", role = c("aut"), email = "nwp@amu.edu.pl"))
 Description: Okreslanie ustawowo wolnych dni od pracy w Polsce.

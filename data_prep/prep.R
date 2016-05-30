@@ -93,7 +93,7 @@ ZS$when <- yday(zs)
 
 # Dzień Bożego Ciała
 
-bc <- zielone_swiatki(lata)
+bc <- boze_cialo(lata)
 BC <- df
 BC$what <- "Dzień Bożego Ciała"
 BC$when <- yday(bc)
