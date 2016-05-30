@@ -159,4 +159,6 @@ dni_wolne$termin <- strptime(paste(dni_wolne$year, dni_wolne$when), format="%Y %
 
 dni_wolne <- na.omit(dni_wolne[c(4,2)])
 colnames(dni_wolne) <- c("data", "nazwa")
+dni_wolne <- dni_wolne[!(is.na(dni_wolne$data)), ]
+
 save(dni_wolne, file='data/dni_wolne.rda')

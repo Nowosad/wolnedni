@@ -4,13 +4,15 @@
 \alias{is_wolne}
 \title{Funkcja sprawdzajaca czy dany dzien jest wolny od pracy w Polsce}
 \usage{
-is_wolne(data)
+is_wolne(data, nazwa = FALSE)
 }
 \arguments{
 \item{data}{obiekt klasy Date}
+
+\item{nazwa}{TRUE/FALSE w przypadku wyboru FALSE wynikiem funkcji jest informacja czy dany dzien jest wolny, natomiast w przypadku wyboru TRUE wynikiem funkcji jest nazwa swieta/dnia wolnego}
 }
 \value{
-TRUE/FALSE
+TRUE/FALSE lub nazwa
 }
 \description{
 Funkcje pozwalaja na sprawdzenie czy dany dzien jest wolny od pracy w Polsce
@@ -21,6 +23,6 @@ data2 <- as.Date("2012-01-03")
 data3 <- as.Date("2012-01-07")
 is_wolne(data1)
 is_wolne(data2)
-is_wolne(data3)
+is_wolne(data3, nazwa=TRUE)
 }
 
