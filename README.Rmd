@@ -30,22 +30,42 @@ devtools::install_github("nowosad/wolnedni")
 
 ```{r, pal_one}
 library('wolnedni')
+```
 
+```{r, funkcje_wielkanoc}
+# określanie daty świąt w kolejnych latach
+wielkanoc(2010)
+poniedzialek_wielkanocny(2012)
+zielone_swiatki(c(2016, 2010))
+boze_cialo(2017)
+```
+
+```{r, funkcje_is_wielkanoc}
+# sprawdzanie czy data jest świętem ruchomym
+data <- as.Date("2016-03-27")
+
+is_wielkanoc(data)
+is_poniedzialek_wielkanocny(data)
+is_zielone_swiatki(data)
+is_boze_cialo(data)
+```
+
+```{r, weekendy}
+# sprawdzenie czy data jest sobotą lub niedzielą
+is_sobota(data)
+is_niedziela(data)
+```
+
+```{r, is_wolne}
+#sprawdzenie czy data jest dniem wolnym od pracy
+is_wolne(data)
+```
+
+```{r, dane}
 # zbiór danych zawierający dni wolne w latach 2001-2025
 data('dni_wolne')
 ```
 
 ```{r, data, echo=FALSE}
 knitr::kable(dni_wolne[c(1, 50, 60, 90, 120, 150, 160, 180, 210, 240, 270, 300, 320), ], row.names = FALSE)
-```
-
-```{r, funkcje}
-# określanie daty świąt w kolejnych latach
-wielkanoc(2010)
-
-poniedzialek_wielkanocny(2012)
-
-zielone_swiatki(c(2016, 2010))
-
-boze_cialo(2017)
 ```
