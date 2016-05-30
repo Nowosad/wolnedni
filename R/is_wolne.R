@@ -17,12 +17,10 @@
 #' is_wolne(data1)
 #' is_wolne(data2)
 #' is_wolne(data3, nazwa=TRUE)
-#' is_wolne(data3, dzientygodnia=T)
+#' is_wolne(data3, dzientygodnia=TRUE)
 
 is_wolne <- function(data, nazwa=FALSE, dzientygodnia=FALSE){
-
         if(dzientygodnia==TRUE) nazwa=TRUE # dodaje na wypadek gdyby ktos ustawil tylko 1 flage
-
         if(!(inherits(data, 'Date'))){
                 print("Sprawdz klase obiektu!")
         } else if(yday(data)==1){
@@ -72,8 +70,7 @@ is_wolne <- function(data, nazwa=FALSE, dzientygodnia=FALSE){
                 y <- "sobota"
         } else{
                 x <- FALSE
-
-                if(dzientygodnia==T){
+                if(dzientygodnia==TRUE){
                         y <- as.character(format(data, "%A"))
                 } else {
                         y <- "inne"

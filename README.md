@@ -60,16 +60,14 @@ is_niedziela(data)
 ``` r
 is_wolne(data)
 #> [1] TRUE
-is_wolne(data, nazwa=T)
-#> [1] "inne"
-is_wolne(data, dzientygodnia = T)
-#> [1] "czwartek"
 ```
 
 ### Sprawdzenie nazwy dnia wolnego
 
 ``` r
-is_wolne(data, nazwa=TRUE)
+is_wolne(data, nazwa = TRUE)
+#> [1] "Wielkanoc"
+is_wolne(data, dzientygodnia = TRUE)
 #> [1] "Wielkanoc"
 ```
 
