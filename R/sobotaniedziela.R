@@ -1,22 +1,24 @@
-#' Funkcja sprawdzajaca czy dana data jest sobota lub niedziela
+#' @title Funkcje sprawdzajace czy dana data jest sobota lub niedziela
 #'
-#' @param data w klasie Date
+#' @description Funkcje sluzace do sprawdzenia czy podana data jest sobota lub niedziela
+#'
+#' @name sobotaniedziela
+#' @rdname sobotaniedziela
+#'
+#' @param data obiekt klasy Date
 #'
 #' @return TRUE/FALSE
-#'
-#' @export
-#'
+NULL
+
+#' @rdname sobotaniedziela
 #' @examples
 #' data1 <- as.Date("2012-01-01")
 #' data2 <- as.Date("2012-01-03")
 #' data3 <- as.Date("2012-01-07")
 #' is.sobota(data1)
-#' is.niedziela(data1)
 #' is.sobota(data2)
-#' is.niedziela(data2)
 #' is.sobota(data3)
-#' is.niedziela(data3)
-
+#' @export
 is.sobota <- function(data){
         if(inherits(data, 'Date')){
         wynik <- format(data, "%u") == 6
@@ -26,8 +28,12 @@ is.sobota <- function(data){
         }
 }
 
+#' @rdname sobotaniedziela
+#' @examples
+#' is.niedziela(data1)
+#' is.niedziela(data2)
+#' is.niedziela(data3)
 #' @export
-#' @describeIn is.sobota Sobota
 is.niedziela <- function(data){
         if(inherits(data, 'Date')){
                 wynik <- format(data, "%u") == 7

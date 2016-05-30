@@ -5,7 +5,7 @@
 \alias{poniedzialek_wielkanocny}
 \alias{wielkanoc}
 \alias{zielone_swiatki}
-\title{Funkcje liczace date ruchomych swiat}
+\title{Funkcje liczace daty ruchomych swiat}
 \usage{
 wielkanoc(rok)
 
@@ -16,7 +16,7 @@ zielone_swiatki(rok)
 boze_cialo(rok)
 }
 \arguments{
-\item{rok}{wektor zawierajacy wybrany rok/lata}
+\item{rok}{wektor numeryczny zawierajacy wybrany rok/lata}
 }
 \value{
 Wektor dat
@@ -24,22 +24,10 @@ Wektor dat
 \description{
 Funkcje pozwalaja na wyliczenie daty wielkanocy, poniedzialku wielkanocnego, zielonych swiatek i bozego ciala
 }
-\section{Functions}{
-\itemize{
-\item \code{poniedzialek_wielkanocny}: Poniedzialek wielkanocny
-
-\item \code{zielone_swiatki}: Zielone Swiatki
-
-\item \code{boze_cialo}: Boze Cialo
-}}
 \examples{
 wielkanoc(2010)
-
 poniedzialek_wielkanocny(2012)
-
 zielone_swiatki(c(2016, 2010))
-
 boze_cialo(2017)
-
 }
 

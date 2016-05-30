@@ -1,23 +1,19 @@
-#' Funkcje liczace date ruchomych swiat
+#' Funkcje liczace daty ruchomych swiat
 #'
 #' Funkcje pozwalaja na wyliczenie daty wielkanocy, poniedzialku wielkanocnego, zielonych swiatek i bozego ciala
 #'
-#' @param rok wektor zawierajacy wybrany rok/lata
+#' @name wielkanoc
+#' @rdname wielkanoc
+#'
+#' @param rok wektor numeryczny zawierajacy wybrany rok/lata
 #'
 #' @return Wektor dat
 #'
-#' @export
-#'
+
+#' @rdname wielkanoc
 #' @examples
 #' wielkanoc(2010)
-#'
-#' poniedzialek_wielkanocny(2012)
-#'
-#' zielone_swiatki(c(2016, 2010))
-#'
-#' boze_cialo(2017)
-#'
-
+#' @export
 wielkanoc <- function(rok){
         a <- rok %% 19
         b <- as.integer(rok/100)
@@ -38,20 +34,26 @@ wielkanoc <- function(rok){
         wielkanoc
 }
 
+#' @rdname wielkanoc
+#' @examples
+#' poniedzialek_wielkanocny(2012)
 #' @export
-#' @describeIn wielkanoc Poniedzialek wielkanocny
 poniedzialek_wielkanocny <- function(rok){
         wielkanoc(rok) + 1
 }
 
+#' @rdname wielkanoc
+#' @examples
+#' zielone_swiatki(c(2016, 2010))
 #' @export
-#' @describeIn wielkanoc Zielone Swiatki
 zielone_swiatki <- function(rok){
         wielkanoc(rok) + 49
 }
 
+#' @rdname wielkanoc
+#' @examples
+#' boze_cialo(2017)
 #' @export
-#' @describeIn wielkanoc Boze Cialo
 boze_cialo <- function(rok){
         wielkanoc(rok) + 60
 }
