@@ -4,6 +4,7 @@
 #'
 #' @param data obiekt klasy Date
 #' @param nazwa TRUE/FALSE w przypadku wyboru FALSE wynikiem funkcji jest informacja czy dany dzien jest wolny, natomiast w przypadku wyboru TRUE wynikiem funkcji jest nazwa swieta/dnia wolnego
+#' @param dzientygodnia TRUE/FALSE wynik to dzien tygodnia jesli data jest dniem roboczym; dla dni swiatecznych podana jest nazwa przypadajacego swieta lub dnia weekendu
 #'
 #' @return TRUE/FALSE lub nazwa
 #' @importFrom lubridate yday year month day
@@ -16,6 +17,7 @@
 #' is_wolne(data1)
 #' is_wolne(data2)
 #' is_wolne(data3, nazwa=TRUE)
+#' is_wolne(data3, dzientygodnia=T)
 
 is_wolne <- function(data, nazwa=FALSE, dzientygodnia=FALSE){
 
